@@ -1,0 +1,963 @@
+{
+  "snapshot": "after_call2",
+  "label": "After call 2",
+  "as_of": "2026-11-13",
+  "source_ids": [
+    "crm",
+    "call1",
+    "email1",
+    "email2",
+    "email3",
+    "call2",
+    "email4"
+  ],
+  "model": "claude-opus-5-5",
+  "generated_at": "2026-11-23T09:29:18.944Z",
+  "usage": {
+    "input_tokens": 18309,
+    "output_tokens": 10865
+  },
+  "citation_check": {
+    "total": 116,
+    "verified": 116,
+    "corrected": 0,
+    "unverified": 0,
+    "unverified_items": []
+  },
+  "brief": {
+    "summary": {
+      "text": "Marlow's year-1 budget fell to a $48K ceiling, against Bramble's $52,400 quote, and go-live slipped from June 1 to September 2027, with signature targeted for April. Open gates are a county third-party risk review (package due Nov 24), an unbudgeted Atrium Connect upgrade or SIP2-only mode, and Tom's question about waiting for Atrium's own module.",
+      "citations": [
+        {
+          "line": "call2-L22",
+          "quote": "So the sixty I told you about is, um... it's forty-eight now. Forty-eight thousand.",
+          "status": "verified"
+        },
+        {
+          "line": "call2-L34",
+          "quote": "Contract signed in the spring. Go-live after Labor Day. September.",
+          "status": "verified"
+        },
+        {
+          "line": "call2-L73",
+          "quote": "That still works for an April signature.",
+          "status": "verified"
+        },
+        {
+          "line": "call2-L15",
+          "quote": "It's a gate. Purchasing won't issue a PO without a risk committee approval on file.",
+          "status": "verified"
+        },
+        {
+          "line": "email4-L9",
+          "quote": "we are NOT on the Connect tier, so we don't have patron API access today.",
+          "status": "verified"
+        },
+        {
+          "line": "email4-L11",
+          "quote": "I'd like to have an answer for why we wouldn't just wait.",
+          "status": "verified"
+        }
+      ]
+    },
+    "facts": [
+      {
+        "key": "stage",
+        "status": "stated",
+        "value": "Evaluation. Technical review was held Nov 10, and the county security review is opening; the package is due Nov 24. Consistent with CRM.",
+        "citations": [
+          {
+            "line": "crm-L11",
+            "quote": "\"stage\": \"Evaluation\"",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L1",
+            "quote": "Call 2 — Technical review & security",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L74",
+            "quote": "We get the full package back to you — Raj, can we do November 24th?",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "budget",
+        "status": "stated",
+        "value": "$48K hard ceiling for year 1 (FY27), down from ~$60K after a county mid-year cut; Maria wants room under it. Ongoing costs need an FY28 operating request.",
+        "citations": [
+          {
+            "line": "call1-L56",
+            "quote": "We've got about sixty thousand earmarked in the FY27 tech line for patron services.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L22",
+            "quote": "So the sixty I told you about is, um... it's forty-eight now. Forty-eight thousand.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L28",
+            "quote": "Forty-eight is the ceiling. And I'd rather leave a little room.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L62",
+            "quote": "Ongoing I'd have to put in the FY28 operating request",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "pricing",
+        "status": "stated",
+        "value": "Year 1 $52,400 ($43,400 subscription + $9,000 implementation); Y2 $44,700; Y3 $46,040; 3-year term, valid through Dec 31, 2026. Phased pricing under $48K is due Nov 17.",
+        "citations": [
+          {
+            "line": "email2-L16",
+            "quote": "Subscription subtotal: $43,400/yr",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L18",
+            "quote": "One-time implementation & Atrium integration: $9,000",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L20",
+            "quote": "Year 1 total: $52,400",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L21",
+            "quote": "Year 2: $44,700 (subscription only, 3% uplift)",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L22",
+            "quote": "Year 3: $46,040",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L24",
+            "quote": "Proposed term is 3 years. Pricing is valid through Dec 31, 2026.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L78",
+            "quote": "I'll send revised, phased pricing under forty-eight by next Tuesday, the seventeenth.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "target_go_live",
+        "status": "stated",
+        "value": "September 2027, after Labor Day, changed from June 1, 2027. Summer reading 2027 will run the old way; a summer-reading phase 2 is wanted by May 2028.",
+        "citations": [
+          {
+            "line": "call2-L32",
+            "quote": "June's not happening.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L34",
+            "quote": "Go-live after Labor Day. September. And we do summer reading the old way one more year.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L54",
+            "quote": "could phase two still be ready by next May? For the year after, I mean. Summer '28.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "signature_deadline",
+        "status": "stated",
+        "value": "Must sign by June 30, 2027, or the FY27 funds are lost. Target is an April 2027 signature, with kickoff in July.",
+        "citations": [
+          {
+            "line": "call2-L36",
+            "quote": "Sign by June 30 or I lose it.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L37",
+            "quote": "We could sign in, say, April, and schedule kickoff for July.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L73",
+            "quote": "That still works for an April signature.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "decision_process",
+        "status": "stated",
+        "value": "Maria recommends and Director Linda Castellano signs. Board of Supervisors approval is needed if over $50K. A county risk committee approval (6–8 weeks from a complete package) is required before a PO is issued.",
+        "citations": [
+          {
+            "line": "call1-L64",
+            "quote": "I'd bring the recommendation. Linda — Linda Castellano, she's our director — she signs.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L64",
+            "quote": "anything over fifty thousand has to go to the county Board of Supervisors for approval",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L15",
+            "quote": "Purchasing won't issue a PO without a risk committee approval on file.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L17",
+            "quote": "Six to eight weeks from a complete package.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L72",
+            "quote": "So, realistically... late January. Maybe early February.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "competition",
+        "status": "stated",
+        "value": "Waiting for incumbent Atrium's patron engagement module, now slated for H2 2027 with a beta first. Other vendors Maria saw covered only rooms or only events.",
+        "citations": [
+          {
+            "line": "call1-L48",
+            "quote": "Atrium's been telling us they've got a patron engagement module on the roadmap, so part of me's like... you know.",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L11",
+            "quote": "They're now saying \"second half of 2027,\" beta first.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L73",
+            "quote": "The other ones were rooms only or events only.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "stakeholders": [
+      {
+        "name": "Maria Okafor",
+        "title": "Deputy Director, Public Services",
+        "organization": "Marlow County Library System",
+        "side": "buyer",
+        "role": "champion",
+        "role_evidence": "She brings the recommendation to the director and drives budget, timing and scope.",
+        "stance": "Strongly positive; summer reading is \"the whole ballgame\"; sees the sub-$50K budget as a plus.",
+        "citations": [
+          {
+            "line": "call1-L64",
+            "quote": "So I'd bring the recommendation.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L91",
+            "quote": "that's the whole ballgame for me.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L26",
+            "quote": "So I'm not — I don't actually hate this.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "name": "Tom Brennan",
+        "title": "Systems & IT Manager",
+        "organization": "Marlow County Library System",
+        "side": "buyer",
+        "role": "technical_evaluator",
+        "role_evidence": "He evaluates the Atrium integration and is running the Connect-tier and SIP2 questions.",
+        "stance": "Reserving judgment on integration and wants to see SIP2-only mode; raising why not wait for Atrium.",
+        "citations": [
+          {
+            "line": "call1-L92",
+            "quote": "I need to see the integration side before I've got an opinion.",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L13",
+            "quote": "I'd like to see exactly what SIP2-only mode looks like.",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L11",
+            "quote": "I'd like to have an answer for why we wouldn't just wait.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "name": "Linda Castellano",
+        "title": "Library Director",
+        "organization": "Marlow County Library System",
+        "side": "buyer",
+        "role": "economic_buyer",
+        "role_evidence": "Maria says Linda signs; she has not attended any call.",
+        "stance": "Not mentioned",
+        "citations": [
+          {
+            "line": "call1-L64",
+            "quote": "Linda — Linda Castellano, she's our director — she signs.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L66",
+            "quote": "She knows I'm looking. She's, um... she's got a lot going on.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "name": "Janelle Brooks",
+        "title": "Senior Information Security Analyst",
+        "organization": "Marlow County Office of Technology",
+        "side": "buyer",
+        "role": "security_approver",
+        "role_evidence": "She runs the county third-party risk review, which gates the PO.",
+        "stance": "Procedural; says the SMS subprocessor is not a blocker but can't promise a bridge letter suffices.",
+        "citations": [
+          {
+            "line": "call2-L9",
+            "quote": "has to go through our third-party risk review before contract signature.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L70",
+            "quote": "That's not a blocker, it's just, um, it's a line item the committee will look at.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L62",
+            "quote": "a bridge letter might be enough, but I can't promise that.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "name": "Dana Whitfield",
+        "title": "Account Executive",
+        "organization": "Bramble Software",
+        "side": "seller",
+        "role": "seller_team",
+        "role_evidence": "Deal owner who sends pricing and runs the calls.",
+        "stance": "Not mentioned",
+        "citations": [
+          {
+            "line": "crm-L10",
+            "quote": "\"owner\": \"Dana Whitfield\"",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L78",
+            "quote": "I'll send revised, phased pricing under forty-eight by next Tuesday, the seventeenth.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "name": "Raj Patel",
+        "title": "Solutions Engineer",
+        "organization": "Bramble Software",
+        "side": "seller",
+        "role": "seller_team",
+        "role_evidence": "He covers the Atrium integration and security package.",
+        "stance": "Not mentioned",
+        "citations": [
+          {
+            "line": "call2-L3",
+            "quote": "Raj Patel (Solutions Engineer, Bramble Software)",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L75",
+            "quote": "Yes. Yes, we'll make it.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "pains": [
+      {
+        "text": "Hold pickup notices are email-only, and many patrons at Westbrook and the rural branches don't check email, so holds expire.",
+        "quantified_impact": "~1,840 expired holds systemwide in September",
+        "citations": [
+          {
+            "line": "call1-L18",
+            "quote": "Email only.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L21",
+            "quote": "It was eighteen-forty. One thousand eight hundred forty, give or take.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L23",
+            "quote": "In one month, systemwide.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Meeting rooms are booked by phone plus a shared Google Sheet, causing double-bookings that front desk staff absorb.",
+        "quantified_impact": "23 rooms; double-bookings about every couple of weeks",
+        "citations": [
+          {
+            "line": "call1-L14",
+            "quote": "We have twenty-three bookable rooms across the system and they're booked by phone",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L14",
+            "quote": "we get double-bookings, like, I want to say every couple weeks?",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Summer reading registration uses paper forms plus a Google Form, then manual merging and deduping.",
+        "quantified_impact": "~4,000 registrations; ~3 weeks of the coordinator's June",
+        "citations": [
+          {
+            "line": "call1-L28",
+            "quote": "last summer we had about four thousand kids register.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L28",
+            "quote": "like three weeks of June merging those into one spreadsheet.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L29",
+            "quote": "The deduping is the worst part.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Events have no registration, so limited-seat programs require calling the branch.",
+        "quantified_impact": "Not mentioned",
+        "citations": [
+          {
+            "line": "call1-L32",
+            "quote": "No registration. So for anything with limited seats it's call-the-branch.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Online card signup can't be completed online (nice-to-have).",
+        "quantified_impact": "Not mentioned",
+        "citations": [
+          {
+            "line": "call1-L34",
+            "quote": "you can start a card application online but you have to come in with ID to finish it.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "objections": [
+      {
+        "text": "Year-1 price of $52,400 exceeds the new $48K ceiling.",
+        "raised_by": "Maria Okafor",
+        "explicitness": "explicit",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "call2-L24",
+            "quote": "And I know your year one was fifty-two-four.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L28",
+            "quote": "Forty-eight is the ceiling.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L78",
+            "quote": "I'll send revised, phased pricing under forty-eight by next Tuesday, the seventeenth.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Not on Atrium Connect tier; the $4,200/yr upgrade isn't budgeted, and SIP2 mode loses features like reply-to-extend.",
+        "raised_by": "Tom Brennan",
+        "explicitness": "explicit",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "email4-L9",
+            "quote": "Upgrading is $4,200/yr from Atrium, and that isn't in anyone's budget right now.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L43",
+            "quote": "works for holds but it's polling only and you lose a couple things. Like the reply-to-extend feature.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L44",
+            "quote": "Wait, that was my favorite part.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Why not wait for Atrium's own patron engagement module? First hinted on call 1, now explicit; Linda will ask.",
+        "raised_by": "Tom Brennan",
+        "explicitness": "explicit",
+        "status": "unaddressed",
+        "citations": [
+          {
+            "line": "call1-L48",
+            "quote": "so part of me's like... you know. But anyway.",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L11",
+            "quote": "Linda is going to ask me about it, and I'd like to have an answer for why we wouldn't just wait.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Wary of integration effort after a past SIP2 self-check migration took far longer than promised.",
+        "raised_by": "Tom Brennan",
+        "explicitness": "implied",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "call1-L42",
+            "quote": "that took us way longer than anybody said it would.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L46",
+            "quote": "It was like eight. But yeah.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L47",
+            "quote": "Our typical implementation is ten to twelve weeks, and a big part of that is we do the integration, not your team.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Only SOC 2 Type I exists; the committee will ask about Type II, which is expected late Feb. A bridge letter may not suffice.",
+        "raised_by": "Janelle Brooks",
+        "explicitness": "explicit",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "call2-L61",
+            "quote": "We have a SOC 2 Type I. Our Type II observation window closes January 31st",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L62",
+            "quote": "The committee is going to ask about Type II.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "SMS sends patron phone numbers to a third-party subprocessor; this must be disclosed and the committee will review it.",
+        "raised_by": "Janelle Brooks",
+        "explicitness": "explicit",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "call2-L68",
+            "quote": "So patron phone numbers leave your environment.",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L32",
+            "quote": "please list all subprocessors in section 7 of the questionnaire.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "The DPA must bar any use of patron data beyond providing the service; Bramble's redlines are pending.",
+        "raised_by": "Janelle Brooks",
+        "explicitness": "explicit",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "call2-L64",
+            "quote": "No analytics resale, no marketing, no model training.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L66",
+            "quote": "Then send me your redlines and we'll see.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Unsure about phasing, which would defer summer reading (her main driver); not thrilled about another manual summer.",
+        "raised_by": "Maria Okafor",
+        "explicitness": "implied",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "call2-L30",
+            "quote": "Maybe. I'd want to see it.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L34",
+            "quote": "Which — I'm not thrilled about. But.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L55",
+            "quote": "Oh, easily. Phase two is mostly configuration once the integration's in.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Send revised, phased pricing under $48K year 1",
+        "owner": "Dana Whitfield",
+        "due": "2026-11-17",
+        "citations": [
+          {
+            "line": "call2-L78",
+            "quote": "I'll send revised, phased pricing under forty-eight by next Tuesday, the seventeenth.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "action": "Deliver complete security package: questionnaire (with section 7 subprocessors), SOC 2 Type I, pen test summary, DPA redlines",
+        "owner": "Raj Patel",
+        "due": "2026-11-24",
+        "citations": [
+          {
+            "line": "call2-L74",
+            "quote": "We get the full package back to you — Raj, can we do November 24th?",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L75",
+            "quote": "Twenty-fourth is tight with the pen test summary but — yes.",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L28",
+            "quote": "the completed questionnaire, your most recent SOC 2 report",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L28",
+            "quote": "your latest penetration test summary, and DPA redlines if any.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "action": "SIP2-only mode deep-dive with Tom (not on Atrium Connect)",
+        "owner": "Raj Patel",
+        "due": "2026-12-02",
+        "citations": [
+          {
+            "line": "call2-L76",
+            "quote": "Raj and Tom do a SIP2 deep-dive — Tom, does December 2nd work?",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L13",
+            "quote": "Still good for Dec 2 with Raj. I'd like to see exactly what SIP2-only mode looks like.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "action": "Give Tom an answer on why not wait for Atrium's H2 2027 module, before Linda asks",
+        "owner": "Not mentioned",
+        "due": "Not mentioned",
+        "citations": [
+          {
+            "line": "email4-L11",
+            "quote": "I'd like to have an answer for why we wouldn't just wait.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "action": "Brief Linda Castellano alone once revised pricing arrives",
+        "owner": "Maria Okafor",
+        "due": "Not mentioned",
+        "citations": [
+          {
+            "line": "call2-L79",
+            "quote": "And I'll brief Linda once I have the revised pricing.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L81",
+            "quote": "Let me do the first one alone.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "text": "Risk review gates the PO: 6–8 weeks from a complete package, committee dark Dec 21–Jan 4; Type II not ready until late Feb.",
+        "severity": "high",
+        "citations": [
+          {
+            "line": "call2-L15",
+            "quote": "Purchasing won't issue a PO without a risk committee approval on file.",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L30",
+            "quote": "the Third-Party Risk Committee does not meet Dec 21 – Jan 4.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L62",
+            "quote": "a bridge letter might be enough, but I can't promise that.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Linda may choose to wait for Atrium's patron engagement module (H2 2027), and Bramble has no answer yet.",
+        "severity": "high",
+        "citations": [
+          {
+            "line": "email4-L11",
+            "quote": "Linda is going to ask me about it, and I'd like to have an answer for why we wouldn't just wait.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Must fit under $48K (ideally with room) while the Atrium Connect upgrade adds an unbudgeted $4,200/yr or forces SIP2 trade-offs.",
+        "severity": "high",
+        "citations": [
+          {
+            "line": "call2-L28",
+            "quote": "Forty-eight is the ceiling. And I'd rather leave a little room.",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L9",
+            "quote": "Upgrading is $4,200/yr from Atrium, and that isn't in anyone's budget right now.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "The economic buyer has not been engaged; Maria declined Dana joining the first briefing.",
+        "severity": "medium",
+        "citations": [
+          {
+            "line": "call1-L66",
+            "quote": "She knows I'm looking. She's, um... she's got a lot going on.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L81",
+            "quote": "Let me do the first one alone.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Summer reading, the main driver, slips to 2028 under the September go-live and possible phasing, which may weaken urgency.",
+        "severity": "medium",
+        "citations": [
+          {
+            "line": "call1-L26",
+            "quote": "Number one thing that keeps me up at night is summer reading.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L34",
+            "quote": "And we do summer reading the old way one more year.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Quoted pricing expires Dec 31, 2026, well before the April signature target.",
+        "severity": "low",
+        "citations": [
+          {
+            "line": "email2-L24",
+            "quote": "Pricing is valid through Dec 31, 2026.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L73",
+            "quote": "That still works for an April signature.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Years 2–3 depend on an FY28 operating request not yet made.",
+        "severity": "low",
+        "citations": [
+          {
+            "line": "call1-L62",
+            "quote": "Ongoing I'd have to put in the FY28 operating request, which, um, that's a conversation for spring.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "crm_discrepancies": [
+      {
+        "field": "target_go_live",
+        "crm_value": "2027-06-01",
+        "sources_value": "September 2027, after Labor Day",
+        "citations": [
+          {
+            "line": "crm-L22",
+            "quote": "\"target_go_live\": \"2027-06-01\"",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L34",
+            "quote": "Go-live after Labor Day. September.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "field": "close_date",
+        "crm_value": "2027-02-26",
+        "sources_value": "April 2027 signature targeted",
+        "citations": [
+          {
+            "line": "crm-L21",
+            "quote": "\"close_date\": \"2027-02-26\"",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L37",
+            "quote": "We could sign in, say, April, and schedule kickoff for July.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "field": "notes (budget)",
+        "crm_value": "Budget ~$60K FY27",
+        "sources_value": "$48K ceiling after a county mid-year cut",
+        "citations": [
+          {
+            "line": "crm-L36",
+            "quote": "Budget ~$60K FY27, must encumber by 6/30/27.",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L22",
+            "quote": "it's forty-eight now. Forty-eight thousand.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "field": "amount_year1",
+        "crm_value": "52400",
+        "sources_value": "Must come in under $48K; phased repricing due Nov 17",
+        "citations": [
+          {
+            "line": "crm-L18",
+            "quote": "\"amount_year1\": 52400",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L78",
+            "quote": "I'll send revised, phased pricing under forty-eight by next Tuesday, the seventeenth.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "field": "competitors",
+        "crm_value": "[] (none)",
+        "sources_value": "Atrium's own patron engagement module (H2 2027) is a wait-for-incumbent alternative",
+        "citations": [
+          {
+            "line": "crm-L34",
+            "quote": "\"competitors\": []",
+            "status": "verified"
+          },
+          {
+            "line": "email4-L11",
+            "quote": "I'd like to have an answer for why we wouldn't just wait.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "field": "contacts",
+        "crm_value": "Maria Okafor, Tom Brennan, Linda Castellano only",
+        "sources_value": "Janelle Brooks (county security) is a required approver",
+        "citations": [
+          {
+            "line": "crm-L29",
+            "quote": "\"contacts\": [",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L15",
+            "quote": "It's a gate. Purchasing won't issue a PO without a risk committee approval on file.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "field": "next_step",
+        "crm_value": "Schedule Raj/Tom Atrium deep-dive; second session early Nov",
+        "sources_value": "Call 2 held Nov 10; next are phased pricing Nov 17, security package Nov 24, SIP2 deep-dive Dec 2",
+        "citations": [
+          {
+            "line": "crm-L35",
+            "quote": "\"next_step\": \"Schedule Raj/Tom Atrium deep-dive; second session early Nov\"",
+            "status": "verified"
+          },
+          {
+            "line": "call2-L76",
+            "quote": "Raj and Tom do a SIP2 deep-dive — Tom, does December 2nd work?",
+            "status": "verified"
+          }
+        ]
+      }
+    ]
+  }
+}

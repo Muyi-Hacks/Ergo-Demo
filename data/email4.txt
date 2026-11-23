@@ -1,0 +1,36 @@
+From: Tom Brennan <tbrennan@marlowcountylibrary.org>
+To: Janelle Brooks <jbrooks@marlowcounty.gov>, Dana Whitfield <dana.whitfield@bramblepatron.com>
+Cc: Maria Okafor <mokafor@marlowcountylibrary.org>, Raj Patel <raj.patel@bramblepatron.com>
+Date: Fri, 13 Nov 2026 11:06:52 -0500
+Subject: RE: Marlow County third-party risk review — Bramble Software
+
+Dana, Raj —
+
+Following up on the Atrium question from Tuesday. I confirmed with our Atrium account manager: we are NOT on the Connect tier, so we don't have patron API access today. Upgrading is $4,200/yr from Atrium, and that isn't in anyone's budget right now.
+
+Also, in the interest of being upfront — I asked them about the patron engagement module they've had on their roadmap. They're now saying "second half of 2027," beta first. I'm not saying that changes anything, but Linda is going to ask me about it, and I'd like to have an answer for why we wouldn't just wait.
+
+Still good for Dec 2 with Raj. I'd like to see exactly what SIP2-only mode looks like.
+
+Tom
+
+Tom Brennan
+Systems & IT Manager
+Marlow County Library System
+
+On Thu, Nov 12, 2026 at 3:17 PM Janelle Brooks <jbrooks@marlowcounty.gov> wrote:
+> Hi Dana,
+>
+> Thanks for the time on Tuesday. As discussed, attached are:
+> - County Vendor Security Questionnaire (v3.2, 84 questions)
+> - Marlow County Data Processing Addendum template
+>
+> To open the review I need a complete package: the completed questionnaire, your most recent SOC 2 report (Type I is acceptable to open; the committee will ask about Type II status), your latest penetration test summary, and DPA redlines if any.
+>
+> The 6–8 week review clock starts when the package is complete. Please note the Third-Party Risk Committee does not meet Dec 21 – Jan 4.
+>
+> One more item: since SMS delivery sends patron phone numbers to your SMS provider, please list all subprocessors in section 7 of the questionnaire.
+>
+> Janelle Brooks
+> Senior Information Security Analyst
+> Marlow County Office of Technology

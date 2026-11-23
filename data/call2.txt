@@ -1,0 +1,84 @@
+Call 2 — Technical review & security | Marlow County Library System × Bramble Software
+Date: Tue, Nov 10, 2026, 2:00–2:24 PM ET (Zoom, auto-transcribed)
+Attendees: Dana Whitfield (Account Executive, Bramble Software); Raj Patel (Solutions Engineer, Bramble Software); Maria Okafor (Deputy Director, Public Services, Marlow County Library System); Tom Brennan (Systems & IT Manager, Marlow County Library System); Janelle Brooks (Senior Information Security Analyst, Marlow County Office of Technology)
+[00:00:03] Dana Whitfield: Hi everyone — I think we've got, um, Maria, Tom... and Janelle, welcome.
+[00:00:08] Janelle Brooks: Hi, thanks for having me.
+[00:00:10] Dana Whitfield: And I've got Raj Patel with me, he's our solutions engineer, he's the one who actually knows how everything works.
+[00:00:15] Raj Patel: (laughs) That's generous. Hi all.
+[00:00:17] Maria Okafor: Hi Raj. So, um, before we dive in — Janelle, do you want to say what you, like, what your role is here? I gave Dana a little heads up but.
+[00:00:24] Janelle Brooks: Sure. I'm a senior information security analyst in the county's Office of Technology. As of August first, any vendor that stores resident PII for any county department — and the library counts — has to go through our third-party risk review before contract signature. So that's why I'm here.
+[00:00:40] Tom Brennan: Which, for the record, I found out about like three weeks ago.
+[00:00:43] Janelle Brooks: It went out in the IT directors' memo, Tom.
+[00:00:45] Tom Brennan: I'm not an IT director, I'm library IT, I don't get the memo.
+[00:00:48] Janelle Brooks: (laughs) Fair. Fair. We're — we're fixing the distribution list.
+[00:00:51] Dana Whitfield: Totally understood. And, Janelle, does the review sign off, like, is it a gate, or advisory?
+[00:00:56] Janelle Brooks: It's a gate. Purchasing won't issue a PO without a risk committee approval on file.
+[00:01:00] Dana Whitfield: Okay. Good to know. What does the — what does it usually take?
+[00:01:04] Janelle Brooks: Six to eight weeks from a complete package. And I want to stress complete. The clock doesn't start until I have everything.
+[00:01:10] Dana Whitfield: Got it. We'll make that easy. Can we come back to the list at the end? I want to make sure Raj gets time with Tom.
+[00:01:16] Janelle Brooks: Of course.
+[00:01:17] Maria Okafor: Can I — sorry, before Raj — can I just do the budget thing? I'd rather get it out of the way.
+[00:01:22] Dana Whitfield: Please.
+[00:01:23] Maria Okafor: So. The county did a mid-year adjustment last week. Four percent across departments, and for us they took most of it out of the tech line. So the sixty I told you about is, um... it's forty-eight now. Forty-eight thousand.
+[00:01:37] Dana Whitfield: Okay. Okay. Thank you for telling me straight.
+[00:01:40] Maria Okafor: And I know your year one was fifty-two-four.
+[00:01:43] Dana Whitfield: It was, yeah.
+[00:01:44] Maria Okafor: But here's the thing — honestly, if we land under fifty, it doesn't have to go to the Board of Supervisors. Which, between us, cuts a month out and takes a lot of, um, risk out. So I'm not — I don't actually hate this.
+[00:01:56] Dana Whitfield: That's a — yeah, that's a good way to look at it. Is forty-eight the hard ceiling for year one?
+[00:02:01] Maria Okafor: Forty-eight is the ceiling. And I'd rather leave a little room.
+[00:02:04] Dana Whitfield: Understood. Could we phase it? Like — one thing we've done is start with holds and rooms, then turn on events and summer reading in a later phase.
+[00:02:12] Maria Okafor: Maybe. I'd want to see it. Which gets to the other thing — timing.
+[00:02:16] Dana Whitfield: Yeah.
+[00:02:17] Maria Okafor: With Janelle's review, and the holidays, I sat down with a calendar and — June's not happening. And I really don't want to go live in the middle of summer reading. That's the worst time to, um, to train front-line staff.
+[00:02:29] Dana Whitfield: So what are you thinking?
+[00:02:31] Maria Okafor: Contract signed in the spring. Go-live after Labor Day. September. And we do summer reading the old way one more year. Which — I'm not thrilled about. But.
+[00:02:40] Dana Whitfield: That's, um — okay. And the FY27 money still needs to be encumbered by June 30?
+[00:02:45] Maria Okafor: Yes. That part didn't change. Sign by June 30 or I lose it.
+[00:02:49] Dana Whitfield: Okay. That's actually workable. We could sign in, say, April, and schedule kickoff for July. Okay. Raj, you want to take it?
+[00:02:56] Raj Patel: Yeah. So, Tom, I know the big thing for you is Atrium, so let me just share a diagram here.
+[00:03:03] Raj Patel: So the way we connect is through Atrium's patron API — holds, patron lookup, hold-shelf expiration dates, all of that comes from there. We poll every five minutes, and we get webhooks for, um, for hold-ready events where the library has those turned on.
+[00:03:16] Tom Brennan: Webhooks are a — is that a setting on our side?
+[00:03:19] Raj Patel: It's on Atrium's side. And — one thing I should flag — the patron API is part of Atrium's Connect tier. Are you on Connect?
+[00:03:26] Tom Brennan: I... honestly don't know. I don't think so? Our contract's pretty bare-bones.
+[00:03:30] Raj Patel: Okay. If you're not, there's two paths: upgrade to Connect, or we run in SIP2 mode, which, um, works for holds but it's polling only and you lose a couple things. Like the reply-to-extend feature.
+[00:03:42] Maria Okafor: Wait, that was my favorite part.
+[00:03:44] Raj Patel: (laughs) I know, everybody loves that one.
+[00:03:46] Tom Brennan: I'll check with our Atrium rep this week.
+[00:03:48] Raj Patel: Great. Then the other piece is SSO — Tom, you mentioned Entra —
+[00:03:52] Tom Brennan: Yeah, but actually — Janelle, staff SSO would go through the county tenant now, right? Not ours?
+[00:03:56] Janelle Brooks: County tenant. Everything's consolidated as of this year. I'd need to set up the enterprise app on our side.
+[00:04:01] Raj Patel: Okay, that's easy on our end, it's standard SAML.
+[00:09:12] Maria Okafor: Raj, can you show the summer reading dedupe? That's — Tom and I were just complaining about that.
+[00:09:17] Raj Patel: Sure. So when a family registers, we match on library card first, and if there's no card we match on, um, name plus date of birth plus guardian email, and staff get a merge queue for anything fuzzy.
+[00:09:29] Tom Brennan: That's — okay, yeah. That would've saved us a lot of June.
+[00:14:50] Maria Okafor: And if we phased it — if summer reading was phase two — could phase two still be ready by next May? For the year after, I mean. Summer '28.
+[00:14:58] Raj Patel: Oh, easily. Phase two is mostly configuration once the integration's in.
+[00:21:30] Janelle Brooks: Can I ask some questions now?
+[00:21:32] Dana Whitfield: Please.
+[00:21:33] Janelle Brooks: Where's the data hosted?
+[00:21:35] Raj Patel: AWS, us-east-2, Ohio. All in the US. Backups are also US.
+[00:21:40] Janelle Brooks: SOC 2?
+[00:21:41] Raj Patel: We have a SOC 2 Type I. Our Type II observation window closes January 31st, and we expect the report, um, late February. End of February.
+[00:21:49] Janelle Brooks: Okay. Type I will let me open the review. The committee is going to ask about Type II. If the report's on track for February, a bridge letter might be enough, but I can't promise that.
+[00:21:58] Dana Whitfield: Understood.
+[00:21:59] Janelle Brooks: Patron records are confidential under state law. So the DPA is going to say you can't use patron data for anything other than providing the service. No analytics resale, no marketing, no model training.
+[00:22:10] Dana Whitfield: We don't do any of that. And we've signed similar language with other library customers.
+[00:22:14] Janelle Brooks: Good. Then send me your redlines and we'll see. Last thing — SMS. Who sends the texts?
+[00:22:19] Raj Patel: We use a third-party SMS provider as a subprocessor. Phone number and the message content go to them.
+[00:22:25] Janelle Brooks: So patron phone numbers leave your environment.
+[00:22:27] Raj Patel: Yes, to the subprocessor, under a DPA with them.
+[00:22:30] Janelle Brooks: Okay. I'll need that listed. That's not a blocker, it's just, um, it's a line item the committee will look at.
+[00:22:36] Maria Okafor: Janelle, realistically — if Bramble gets you everything by, like, Thanksgiving, when do we get an answer?
+[00:22:42] Janelle Brooks: Committee doesn't meet the last two weeks of December. So, realistically... late January. Maybe early February.
+[00:22:49] Maria Okafor: Okay. That still works for an April signature.
+[00:22:52] Dana Whitfield: Okay. Let me recap next steps so nobody has to remember. Janelle sends us the questionnaire and DPA template. We get the full package back to you — Raj, can we do November 24th?
+[00:23:02] Raj Patel: Twenty-fourth is tight with the pen test summary but — yes. Yes, we'll make it.
+[00:23:06] Dana Whitfield: Tom checks the Atrium Connect tier. Raj and Tom do a SIP2 deep-dive — Tom, does December 2nd work?
+[00:23:12] Tom Brennan: December second works.
+[00:23:14] Dana Whitfield: And I'll send revised, phased pricing under forty-eight by next Tuesday, the seventeenth.
+[00:23:19] Maria Okafor: And I'll brief Linda once I have the revised pricing. She's — she's going to want to know why it's under fifty now, but in a good way.
+[00:23:26] Dana Whitfield: Would it help if I joined that?
+[00:23:28] Maria Okafor: Let me do the first one alone.
+[00:23:30] Dana Whitfield: Of course. Okay. Thank you, everyone, this was really helpful.
+[00:23:33] Janelle Brooks: Thanks. I'll send the questionnaire today or tomorrow.
+[00:23:35] Tom Brennan: Thanks, Raj.

@@ -1,0 +1,101 @@
+Call 1 — Discovery | Marlow County Library System × Bramble Software
+Date: Wed, Oct 14, 2026, 10:00–10:29 AM ET (Zoom, auto-transcribed)
+Attendees: Dana Whitfield (Account Executive, Bramble Software); Maria Okafor (Deputy Director, Public Services, Marlow County Library System); Tom Brennan (Systems & IT Manager, Marlow County Library System)
+[00:00:04] Dana Whitfield: Hi, hey Maria — can you hear me okay?
+[00:00:07] Maria Okafor: Yep, yep, I've got you. Tom's joining, he's, um, he's just finishing something up with a branch, he'll be on in a sec.
+[00:00:13] Dana Whitfield: No worries at all. How's — how's the week going?
+[00:00:16] Maria Okafor: Oh, it's a week. We had a pipe thing at the Eastgate branch Monday so I've been, like, half facilities manager this week.
+[00:00:22] Dana Whitfield: Oh no.
+[00:00:23] Maria Okafor: It's fine, it's fine, it's dry now. Mostly.
+[00:00:27] Tom Brennan: Hey, sorry — sorry, I'm here. Had a self-check kiosk at Northfield throwing errors.
+[00:00:31] Dana Whitfield: Hey Tom, no problem. So, um, thanks both for making time. I know you filled out the form on our site a couple weeks back, Maria, but I'd love to just hear it in your words — like, what's going on that made you reach out?
+[00:00:42] Maria Okafor: Sure. So, okay. The short version is our patron-facing stuff is kind of... duct tape. We're nine branches, and every single thing a patron wants to do that isn't checking out a book is a different system, or a phone call, or a paper form.
+[00:00:56] Dana Whitfield: Mm-hm.
+[00:00:57] Maria Okafor: Like meeting rooms. We have twenty-three bookable rooms across the system and they're booked by phone and then the branch staff put it in a shared Google Sheet. And we get double-bookings, like, I want to say every couple weeks? Somebody shows up for their AA meeting and there's a tutoring group in there.
+[00:01:14] Dana Whitfield: Ugh, yeah. That's — yeah. That's a rough one for the staff who have to, like, deal with it at the door.
+[00:01:18] Maria Okafor: Exactly. And it's the front desk person who gets yelled at, not me.
+[00:01:22] Dana Whitfield: Right. What else? Rooms is one.
+[00:01:25] Maria Okafor: Holds is the big one honestly. Patrons place holds, the item comes in, we send an email, and that's it. Email only. A lot of our patrons, especially at Westbrook and the two rural branches, they don't — they're not checking email.
+[00:01:39] Dana Whitfield: So no SMS today?
+[00:01:41] Maria Okafor: No SMS. And the hold shelf is seven days, and then it goes back. Tom, what was the number from September, the expired —
+[00:01:47] Tom Brennan: Uh, expired holds? It was eighteen-forty. One thousand eight hundred forty, give or take.
+[00:01:52] Dana Whitfield: In one month?
+[00:01:53] Tom Brennan: In one month, systemwide.
+[00:01:55] Maria Okafor: And every one of those is staff pulling it, shelving it, routing it back. Plus the patron's annoyed. Plus, you know, the next person in the queue waited longer for no reason.
+[00:02:04] Dana Whitfield: Yeah. Okay. That's — that's honestly one of the most common things we fix, so that's good to hear. Is that — sorry, is that the number one thing, or —
+[00:02:12] Maria Okafor: It's the number one thing I can put a number on. Number one thing that keeps me up at night is summer reading.
+[00:02:17] Dana Whitfield: Tell me about summer reading.
+[00:02:19] Maria Okafor: So, last summer we had about four thousand kids register. Paper forms at the branch, plus a Google Form for people who, um, who wanted to do it online, and then my youth services coordinator spends, I'm not exaggerating, like three weeks of June merging those into one spreadsheet.
+[00:02:35] Tom Brennan: And deduping. The deduping is the worst part.
+[00:02:37] Maria Okafor: The deduping is the worst part.
+[00:02:39] Dana Whitfield: And events generally — storytimes, programs — same deal?
+[00:02:43] Maria Okafor: Events are on the website calendar, which is just — it's a WordPress plugin. No registration. So for anything with limited seats it's call-the-branch.
+[00:02:51] Dana Whitfield: Got it. Okay. So rooms, holds notifications, summer reading and events registration. Anything on the, like, library card side? Signups?
+[00:02:59] Maria Okafor: Oh — yeah, actually. Right now you can start a card application online but you have to come in with ID to finish it. Which, I mean, some of that's policy. But it'd be nice to at least have it, um, smoother.
+[00:03:10] Dana Whitfield: Okay. I'll note that as a nice-to-have then, not a must.
+[00:03:13] Maria Okafor: Yeah, nice-to-have.
+[00:03:15] Dana Whitfield: Tom, from your side — what does the tech landscape look like? What's your ILS?
+[00:03:20] Tom Brennan: We're on Atrium. Atrium ILS, hosted. Been on it, um, four years? Four years in March.
+[00:03:26] Dana Whitfield: Great, we integrate with Atrium today — we've got, I think, six or seven Atrium libraries live. We use their patron API for holds and account lookups.
+[00:03:34] Tom Brennan: Patron API or SIP2?
+[00:03:36] Dana Whitfield: Patron API primarily, we can fall back to SIP2 for a couple of things. I'd want our SE, Raj, to go deeper on that with you, honestly, he's — he knows it way better than me.
+[00:03:44] Tom Brennan: Yeah. Okay. Because the, uh — when we migrated onto Atrium, the SIP2 stuff for the self-check machines was a whole — that took us way longer than anybody said it would.
+[00:03:53] Maria Okafor: Eighteen months.
+[00:03:54] Tom Brennan: It was not eighteen months.
+[00:03:55] Maria Okafor: It felt like eighteen months.
+[00:03:56] Tom Brennan: (laughs) It was like eight. But yeah.
+[00:03:59] Dana Whitfield: That's fair, and that's — I hear that a lot. Our typical implementation is ten to twelve weeks, and a big part of that is we do the integration, not your team.
+[00:04:07] Tom Brennan: Mm. Yeah, I mean. I'll be honest, Atrium's been telling us they've got a patron engagement module on the roadmap, so part of me's like... you know. But anyway. Yeah, happy to talk to Raj.
+[00:04:18] Dana Whitfield: Perfect, I'll get that set up. So — Maria, can I ask about, um, timing? Is there something driving this now?
+[00:04:24] Maria Okafor: Summer reading. I want this live before summer reading kicks off, which is first week of June. Like, if I can do registration in a real system next summer, that alone —
+[00:04:33] Dana Whitfield: So live by, like, June 1st?
+[00:04:35] Maria Okafor: June 1st, yeah. Ideally staff trained in May.
+[00:04:38] Dana Whitfield: Okay. That's — working backward, ten to twelve weeks, we'd want to kick off by, call it, early March. Which means paperwork done in February-ish.
+[00:04:47] Maria Okafor: That's doable. I think that's doable.
+[00:04:50] Dana Whitfield: And budget-wise — is there money set aside for this, or is this something you'd be, um, building a case for?
+[00:04:56] Maria Okafor: There's money. We've got about sixty thousand earmarked in the FY27 tech line for patron services. That's, um — it was originally for a website refresh that got pushed, so I sort of... claimed it.
+[00:05:07] Dana Whitfield: (laughs) Love that.
+[00:05:08] Maria Okafor: But it's FY27 money, so — our fiscal year ends June 30th, it has to be encumbered by then or it goes away.
+[00:05:15] Dana Whitfield: Got it, so contract signed before June 30 regardless.
+[00:05:18] Maria Okafor: Before June 30, yes.
+[00:05:20] Dana Whitfield: And sixty — is that annual, or one-time?
+[00:05:23] Maria Okafor: It's the first-year number. Ongoing I'd have to put in the FY28 operating request, which, um, that's a conversation for spring.
+[00:05:31] Dana Whitfield: Makes sense. And then, process — who else is involved in a decision like this? Like, who signs?
+[00:05:37] Maria Okafor: So I'd bring the recommendation. Linda — Linda Castellano, she's our director — she signs. And then anything over fifty thousand has to go to the county Board of Supervisors for approval, so that's — that adds, like, a month, depending on their agenda.
+[00:05:51] Dana Whitfield: Okay. Board's over fifty K. Got it. Is Linda — is she bought into the problem? Like, does she know about this?
+[00:05:57] Maria Okafor: She knows I'm looking. She's, um... she's got a lot going on.
+[00:06:02] Dana Whitfield: Would it make sense to get her on a call at some point?
+[00:06:05] Maria Okafor: Maybe later. Let me see the pricing first, honestly. I don't want to bring her something and then have it be, like, double what I said.
+[00:06:12] Dana Whitfield: Totally fair. Totally fair. Anyone else? Procurement, legal, IT security, anyone like that?
+[00:06:18] Maria Okafor: Tom's IT.
+[00:06:19] Tom Brennan: I'm IT. I mean — I'm library IT. County has their own thing but we mostly, um, we mostly do our own.
+[00:06:25] Dana Whitfield: Okay, great. Is there anyone else you're looking at? Other vendors?
+[00:06:29] Maria Okafor: I looked at a couple. Honestly you were the only one that did all of it in one place. The other ones were rooms only or events only.
+[00:06:36] Dana Whitfield: That's what we hear. Okay. So — I've got about twenty minutes left, I want to show you a little bit, is that okay?
+[00:06:41] Maria Okafor: Yeah, please.
+[00:06:42] Dana Whitfield: Okay, let me share — can you see my screen? It should be the, um, the patron home page.
+[00:06:47] Maria Okafor: Yep.
+[00:06:48] Dana Whitfield: So this is what a patron sees when they log in with their library card. Holds, rooms, events, all in one place, and it's branded as you, not as us.
+[00:12:31] Maria Okafor: Wait, go back. So the text goes out when it hits the hold shelf and then again — what, two days before it expires?
+[00:12:37] Dana Whitfield: Two days before, configurable. And patrons can reply "EXTEND" for, um, up to three more days if the branch allows it.
+[00:12:44] Maria Okafor: Oh, staff are going to love that. Tom, are you seeing this?
+[00:12:47] Tom Brennan: Yeah. How's it know the shelf expiration date, that's from Atrium?
+[00:12:51] Dana Whitfield: From Atrium, yeah, through the hold record.
+[00:12:53] Tom Brennan: Okay.
+[00:19:05] Maria Okafor: Can a room booking require approval? Like, our Westbrook community room, the branch manager has to approve anything after hours.
+[00:19:12] Dana Whitfield: Yep, per-room approval rules. You can set it by room, by time of day, or by, um, by group type.
+[00:19:18] Maria Okafor: Okay. Okay, that's good.
+[00:24:40] Tom Brennan: Does it do SSO for staff? We're on Microsoft for staff logins.
+[00:24:44] Dana Whitfield: Yes — SAML, works with Entra. Raj can walk you through setup.
+[00:28:02] Dana Whitfield: Okay, I'll stop sharing. So, um, what'd you think?
+[00:28:06] Maria Okafor: I mean. Honestly it's the summer reading piece. If that works like you showed, that's, um — that's the whole ballgame for me.
+[00:28:13] Tom Brennan: I need to see the integration side before I've got an opinion.
+[00:28:16] Dana Whitfield: Fair. Completely fair. So, next steps — I'll send a recap today or tomorrow, I'll get you pricing by end of next week, and let's get Raj and Tom together for a technical deep-dive on Atrium. And then maybe a second session with, um, with whoever else should see it?
+[00:28:30] Maria Okafor: That works. Send me some times for the second one, maybe early November.
+[00:28:34] Dana Whitfield: Will do. Pricing — anything I should know? Like, do you want it, um, broken out by module?
+[00:28:39] Maria Okafor: Broken out would help. And per-year. I need to see what year two looks like.
+[00:28:43] Dana Whitfield: You got it.
+[00:28:44] Tom Brennan: Oh — and send me whatever you have on, like, security. Docs. Whatever.
+[00:28:48] Dana Whitfield: Will do, I'll send our security overview.
+[00:28:50] Maria Okafor: Great. Thanks, Dana.
+[00:28:52] Dana Whitfield: Thank you both, talk soon.

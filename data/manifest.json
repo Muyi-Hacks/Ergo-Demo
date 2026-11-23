@@ -1,0 +1,29 @@
+{
+  "deal": {
+    "id": "marlow-county-library",
+    "seller": "Bramble Software",
+    "buyer": "Marlow County Library System",
+    "product": "Bramble Patron Platform"
+  },
+  "sources": [
+    { "id": "crm",    "file": "crm.json",   "kind": "crm",        "title": "CRM opportunity record",                "date": "2026-10-29" },
+    { "id": "call1",  "file": "call1.txt",  "kind": "transcript", "title": "Call 1 — Discovery",                    "date": "2026-10-14" },
+    { "id": "email1", "file": "email1.txt", "kind": "email",      "title": "Recap + next steps (Dana)",              "date": "2026-10-15" },
+    { "id": "email2", "file": "email2.txt", "kind": "email",      "title": "Pricing proposal (Dana)",                "date": "2026-10-23" },
+    { "id": "email3", "file": "email3.txt", "kind": "email",      "title": "Heads-up before call 2 (Maria)",         "date": "2026-11-04" },
+    { "id": "call2",  "file": "call2.txt",  "kind": "transcript", "title": "Call 2 — Technical review & security",  "date": "2026-11-10" },
+    { "id": "email4", "file": "email4.txt", "kind": "email",      "title": "Risk review + Atrium follow-up (Janelle, Tom)", "date": "2026-11-13" }
+  ],
+  "snapshots": {
+    "after_call1": {
+      "label": "After call 1",
+      "as_of": "2026-10-30",
+      "sources": ["crm", "call1", "email1", "email2"]
+    },
+    "after_call2": {
+      "label": "After call 2",
+      "as_of": "2026-11-13",
+      "sources": ["crm", "call1", "email1", "email2", "email3", "call2", "email4"]
+    }
+  }
+}

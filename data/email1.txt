@@ -1,0 +1,33 @@
+From: Dana Whitfield <dana.whitfield@bramblepatron.com>
+To: Maria Okafor <mokafor@marlowcountylibrary.org>
+Cc: Tom Brennan <tbrennan@marlowcountylibrary.org>
+Date: Thu, 15 Oct 2026 09:12:04 -0400
+Subject: Recap + next steps — Marlow County Library x Bramble
+Attachments: Bramble_Security_Overview_2026.pdf
+
+Hi Maria and Tom,
+
+Thanks again for the time yesterday — and good luck with the Eastgate pipes.
+
+Here's what I heard:
+- Hold pickup notices are email-only; ~1,840 holds expired unclaimed in September across the system.
+- 23 meeting rooms are booked by phone + a shared Google Sheet, with double-bookings every couple of weeks.
+- Summer reading: ~4,000 registrations last year across paper forms + a Google Form, then ~3 weeks of manual merging and deduping.
+- Events have no registration today (WordPress calendar only).
+- Nice-to-have: a smoother online library card signup.
+
+Timing & process (correct me if I got anything wrong):
+- Goal: live by June 1, 2027, ahead of summer reading, with staff training in May.
+- ~$60K earmarked in the FY27 tech line; it must be encumbered by June 30, 2027.
+- Maria recommends, Linda Castellano signs; purchases over $50K go to the Board of Supervisors (adds ~1 month).
+
+Next steps:
+1. Pricing, broken out by module and by year — from me by Fri 10/23.
+2. Security overview — attached for Tom.
+3. Atrium technical deep-dive with Raj Patel (our SE) and Tom — I'll send times.
+4. A second session in early November for anyone else who should see it.
+
+Best,
+Dana
+
+Dana Whitfield | Account Executive | Bramble Software

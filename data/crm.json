@@ -1,0 +1,38 @@
+{
+  "opportunity_id": "OPP-2026-0417",
+  "name": "Marlow County Library System — Bramble Patron Platform",
+  "account": {
+    "name": "Marlow County Library System",
+    "type": "Public library (county system)",
+    "branches": 9,
+    "ils": "Atrium ILS (hosted)"
+  },
+  "owner": "Dana Whitfield",
+  "stage": "Evaluation",
+  "stage_history": [
+    { "stage": "Lead", "date": "2026-09-30" },
+    { "stage": "Discovery", "date": "2026-10-14" },
+    { "stage": "Evaluation", "date": "2026-10-23" }
+  ],
+  "forecast_category": "Best Case",
+  "amount_year1": 52400,
+  "arr": 43400,
+  "term_years": 3,
+  "close_date": "2027-02-26",
+  "target_go_live": "2027-06-01",
+  "products": [
+    "Holds & Notifications",
+    "Rooms & Spaces",
+    "Events & Programs",
+    "Online Card Signup"
+  ],
+  "contacts": [
+    { "name": "Maria Okafor", "title": "Deputy Director, Public Services", "role": "Champion", "last_activity": "2026-10-14" },
+    { "name": "Tom Brennan", "title": "Systems & IT Manager", "role": "Technical Evaluator", "last_activity": "2026-10-14" },
+    { "name": "Linda Castellano", "title": "Library Director", "role": "Economic Buyer", "last_activity": null }
+  ],
+  "competitors": [],
+  "next_step": "Schedule Raj/Tom Atrium deep-dive; second session early Nov",
+  "notes": "Budget ~$60K FY27, must encumber by 6/30/27. Board of Supervisors approval required >$50K. Summer reading registration is the main driver.",
+  "last_modified": "2026-10-29T16:12:00-04:00"
+}

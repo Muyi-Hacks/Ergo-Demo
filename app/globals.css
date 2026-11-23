@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: #ffffff;
+  color: #1c1917;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Flash the line a citation points to. */
+@keyframes line-flash {
+  0% {
+    background-color: rgb(253 230 138); /* amber-200 */
+  }
+  100% {
+    background-color: rgb(255 251 235); /* amber-50 */
+  }
+}
+.line-flash {
+  animation: line-flash 1.2s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .line-flash {
+    animation: none;
+  }
+}

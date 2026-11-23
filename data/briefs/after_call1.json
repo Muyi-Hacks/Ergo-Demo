@@ -1,0 +1,652 @@
+{
+  "snapshot": "after_call1",
+  "label": "After call 1",
+  "as_of": "2026-10-30",
+  "source_ids": [
+    "crm",
+    "call1",
+    "email1",
+    "email2"
+  ],
+  "model": "claude-opus-5-5",
+  "generated_at": "2026-11-23T09:29:01.051Z",
+  "usage": {
+    "input_tokens": 12083,
+    "output_tokens": 8000
+  },
+  "citation_check": {
+    "total": 74,
+    "verified": 74,
+    "corrected": 0,
+    "unverified": 0,
+    "unverified_items": []
+  },
+  "brief": {
+    "summary": {
+      "text": "Discovery is done and pricing went to Maria on 10/23 ($52,400 Year 1, just above the $50K Board threshold); no buyer response appears in the sources. The Atrium technical deep-dive with Tom is still unscheduled (week of Nov 2 at the earliest), and director Linda Castellano has not been engaged.",
+      "citations": [
+        {
+          "line": "email2-L20",
+          "quote": "Year 1 total: $52,400",
+          "status": "verified"
+        },
+        {
+          "line": "email2-L26",
+          "quote": "the year-one number lands just above the $50K Board threshold you mentioned",
+          "status": "verified"
+        },
+        {
+          "line": "email2-L28",
+          "quote": "the Atrium deep-dive with Tom would be the week of Nov 2 at the earliest",
+          "status": "verified"
+        },
+        {
+          "line": "call1-L68",
+          "quote": "Maybe later. Let me see the pricing first, honestly.",
+          "status": "verified"
+        }
+      ]
+    },
+    "facts": [
+      {
+        "key": "stage",
+        "status": "stated",
+        "value": "Evaluation (CRM, since 10/23). Discovery held, pricing sent; technical deep-dive and second session not yet held.",
+        "citations": [
+          {
+            "line": "crm-L11",
+            "quote": "\"stage\": \"Evaluation\",",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L9",
+            "quote": "As promised, here's pricing broken out by module and by year.",
+            "status": "verified"
+          },
+          {
+            "line": "email1-L27",
+            "quote": "Atrium technical deep-dive with Raj Patel (our SE) and Tom — I'll send times.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "budget",
+        "status": "stated",
+        "value": "~$60K first-year money in FY27 tech line (reclaimed from website refresh); ongoing costs need an FY28 operating request in spring.",
+        "citations": [
+          {
+            "line": "call1-L56",
+            "quote": "We've got about sixty thousand earmarked in the FY27 tech line for patron services.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L62",
+            "quote": "It's the first-year number. Ongoing I'd have to put in the FY28 operating request",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "pricing",
+        "status": "stated",
+        "value": "3-year term: Y1 $52,400 ($43,400 subscription + $9,000 implementation), Y2 $44,700, Y3 $46,040. Valid through Dec 31, 2026.",
+        "citations": [
+          {
+            "line": "email2-L16",
+            "quote": "Subscription subtotal: $43,400/yr",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L18",
+            "quote": "One-time implementation & Atrium integration: $9,000",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L20",
+            "quote": "Year 1 total: $52,400",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L21",
+            "quote": "Year 2: $44,700 (subscription only, 3% uplift)",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L22",
+            "quote": "Year 3: $46,040",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L24",
+            "quote": "Proposed term is 3 years. Pricing is valid through Dec 31, 2026.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "target_go_live",
+        "status": "stated",
+        "value": "June 1, 2027, before summer reading; staff trained in May.",
+        "citations": [
+          {
+            "line": "call1-L52",
+            "quote": "June 1st, yeah. Ideally staff trained in May.",
+            "status": "verified"
+          },
+          {
+            "line": "email1-L20",
+            "quote": "Goal: live by June 1, 2027, ahead of summer reading, with staff training in May.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "signature_deadline",
+        "status": "stated",
+        "value": "Contract must be signed before June 30, 2027, or FY27 funds lapse. Quoted pricing expires Dec 31, 2026.",
+        "citations": [
+          {
+            "line": "call1-L58",
+            "quote": "our fiscal year ends June 30th, it has to be encumbered by then or it goes away.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L60",
+            "quote": "Before June 30, yes.",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L24",
+            "quote": "Pricing is valid through Dec 31, 2026.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "decision_process",
+        "status": "stated",
+        "value": "Maria recommends; Director Linda Castellano signs; over $50K requires county Board of Supervisors approval (~1 month). Tom handles library IT.",
+        "citations": [
+          {
+            "line": "call1-L64",
+            "quote": "So I'd bring the recommendation. Linda — Linda Castellano, she's our director — she signs.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L64",
+            "quote": "anything over fifty thousand has to go to the county Board of Supervisors for approval",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L71",
+            "quote": "I'm IT. I mean — I'm library IT. County has their own thing but we mostly, um, we mostly do our own.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "key": "competition",
+        "status": "stated",
+        "value": "Incumbent Atrium has a patron engagement module on its roadmap (wait option). Maria looked at a couple of point solutions (rooms-only or events-only).",
+        "citations": [
+          {
+            "line": "call1-L48",
+            "quote": "Atrium's been telling us they've got a patron engagement module on the roadmap, so part of me's like... you know.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L73",
+            "quote": "I looked at a couple. Honestly you were the only one that did all of it in one place.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "stakeholders": [
+      {
+        "name": "Maria Okafor",
+        "title": "Deputy Director, Public Services",
+        "organization": "Marlow County Library System",
+        "side": "buyer",
+        "role": "champion",
+        "role_evidence": "She brought the inquiry, controls the earmarked money, and will bring the recommendation.",
+        "stance": "Enthusiastic; summer reading registration is \"the whole ballgame\" for her.",
+        "citations": [
+          {
+            "line": "call1-L64",
+            "quote": "So I'd bring the recommendation.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L91",
+            "quote": "If that works like you showed, that's, um — that's the whole ballgame for me.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "name": "Tom Brennan",
+        "title": "Systems & IT Manager",
+        "organization": "Marlow County Library System",
+        "side": "buyer",
+        "role": "technical_evaluator",
+        "role_evidence": "He owns library IT, is reviewing the Atrium integration, and asked for security docs.",
+        "stance": "Reserved; wants to see integration first and mentions Atrium's roadmap module.",
+        "citations": [
+          {
+            "line": "call1-L92",
+            "quote": "I need to see the integration side before I've got an opinion.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L98",
+            "quote": "send me whatever you have on, like, security. Docs.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L48",
+            "quote": "part of me's like... you know.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "name": "Linda Castellano",
+        "title": "Library Director",
+        "organization": "Marlow County Library System",
+        "side": "buyer",
+        "role": "economic_buyer",
+        "role_evidence": "Maria says Linda signs; she has not been on any call.",
+        "stance": "Not mentioned",
+        "citations": [
+          {
+            "line": "call1-L64",
+            "quote": "Linda — Linda Castellano, she's our director — she signs.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L66",
+            "quote": "She knows I'm looking. She's, um... she's got a lot going on.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "name": "Dana Whitfield",
+        "title": "Account Executive",
+        "organization": "Bramble Software",
+        "side": "seller",
+        "role": "seller_team",
+        "role_evidence": "Opportunity owner who ran discovery and sent pricing.",
+        "stance": "Not mentioned",
+        "citations": [
+          {
+            "line": "crm-L10",
+            "quote": "\"owner\": \"Dana Whitfield\",",
+            "status": "verified"
+          },
+          {
+            "line": "email1-L33",
+            "quote": "Dana Whitfield | Account Executive | Bramble Software",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "name": "Raj Patel",
+        "title": "SE",
+        "organization": "Bramble Software",
+        "side": "seller",
+        "role": "seller_team",
+        "role_evidence": "Sales engineer slated to run the Atrium technical deep-dive with Tom.",
+        "stance": "Not mentioned",
+        "citations": [
+          {
+            "line": "email1-L27",
+            "quote": "Atrium technical deep-dive with Raj Patel (our SE) and Tom",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L28",
+            "quote": "Raj is at a conference next week",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "pains": [
+      {
+        "text": "Summer reading registration runs on paper plus a Google Form, then weeks of manual merging and deduping.",
+        "quantified_impact": "~4,000 registrations; ~3 weeks of June for youth services coordinator",
+        "citations": [
+          {
+            "line": "call1-L28",
+            "quote": "last summer we had about four thousand kids register.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L28",
+            "quote": "like three weeks of June merging those into one spreadsheet.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L29",
+            "quote": "The deduping is the worst part.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Hold pickup notices are email-only, and many patrons at Westbrook and rural branches don't check email, so holds expire.",
+        "quantified_impact": "~1,840 expired holds systemwide in September",
+        "citations": [
+          {
+            "line": "call1-L18",
+            "quote": "Email only. A lot of our patrons, especially at Westbrook and the two rural branches",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L21",
+            "quote": "It was eighteen-forty. One thousand eight hundred forty, give or take.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L24",
+            "quote": "every one of those is staff pulling it, shelving it, routing it back.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Meeting rooms are booked by phone into a shared Google Sheet, which causes double-bookings that front desk staff absorb.",
+        "quantified_impact": "23 rooms; double-bookings every couple of weeks",
+        "citations": [
+          {
+            "line": "call1-L14",
+            "quote": "We have twenty-three bookable rooms across the system and they're booked by phone",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L14",
+            "quote": "we get double-bookings, like, I want to say every couple weeks?",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Events have no registration; limited-seat programs require calling the branch.",
+        "quantified_impact": "Not mentioned",
+        "citations": [
+          {
+            "line": "call1-L32",
+            "quote": "No registration. So for anything with limited seats it's call-the-branch.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Online card applications must be finished in person with ID (nice-to-have).",
+        "quantified_impact": "Not mentioned",
+        "citations": [
+          {
+            "line": "call1-L34",
+            "quote": "you can start a card application online but you have to come in with ID to finish it.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L36",
+            "quote": "Yeah, nice-to-have.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "objections": [
+      {
+        "text": "Atrium's own patron engagement module is on its roadmap; waiting for the incumbent may be an option.",
+        "raised_by": "Tom Brennan",
+        "explicitness": "implied",
+        "status": "unaddressed",
+        "citations": [
+          {
+            "line": "call1-L48",
+            "quote": "Atrium's been telling us they've got a patron engagement module on the roadmap, so part of me's like... you know. But anyway.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Integration risk: the prior SIP2 self-check integration ran long. Tom withholds an opinion until he sees the integration.",
+        "raised_by": "Tom Brennan",
+        "explicitness": "explicit",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "call1-L42",
+            "quote": "the SIP2 stuff for the self-check machines was a whole — that took us way longer than anybody said it would.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L92",
+            "quote": "I need to see the integration side before I've got an opinion.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L47",
+            "quote": "Our typical implementation is ten to twelve weeks, and a big part of that is we do the integration, not your team.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Maria fears pricing may far exceed what she told Linda; she won't involve Linda until she sees pricing.",
+        "raised_by": "Maria Okafor",
+        "explicitness": "implied",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "call1-L68",
+            "quote": "I don't want to bring her something and then have it be, like, double what I said.",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L20",
+            "quote": "Year 1 total: $52,400",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Year 1 total exceeds the $50K threshold that triggers Board of Supervisors approval.",
+        "raised_by": "Dana Whitfield",
+        "explicitness": "explicit",
+        "status": "unaddressed",
+        "citations": [
+          {
+            "line": "email2-L26",
+            "quote": "I know the year-one number lands just above the $50K Board threshold you mentioned — happy to talk through options there.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Ongoing years aren't funded yet; Maria needs to see year-two cost for the FY28 request.",
+        "raised_by": "Maria Okafor",
+        "explicitness": "implied",
+        "status": "partially_addressed",
+        "citations": [
+          {
+            "line": "call1-L96",
+            "quote": "I need to see what year two looks like.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L62",
+            "quote": "Ongoing I'd have to put in the FY28 operating request, which, um, that's a conversation for spring.",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L21",
+            "quote": "Year 2: $44,700 (subscription only, 3% uplift)",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "next_steps": [
+      {
+        "action": "Schedule and hold Atrium technical deep-dive with Raj and Tom (week of Nov 2 at earliest)",
+        "owner": "Dana Whitfield",
+        "due": "Not mentioned",
+        "citations": [
+          {
+            "line": "email2-L28",
+            "quote": "the Atrium deep-dive with Tom would be the week of Nov 2 at the earliest. I'll get something on the calendar.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "action": "Send Maria times for a second session in early November for other stakeholders",
+        "owner": "Dana Whitfield",
+        "due": "Not mentioned",
+        "citations": [
+          {
+            "line": "call1-L94",
+            "quote": "Send me some times for the second one, maybe early November.",
+            "status": "verified"
+          },
+          {
+            "line": "email1-L28",
+            "quote": "A second session in early November for anyone else who should see it.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "action": "Talk through options for Year 1 total sitting above the $50K Board threshold",
+        "owner": "Dana Whitfield",
+        "due": "Not mentioned",
+        "citations": [
+          {
+            "line": "email2-L26",
+            "quote": "happy to talk through options there.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "action": "Submit FY28 operating request for ongoing subscription costs",
+        "owner": "Maria Okafor",
+        "due": "Not mentioned",
+        "citations": [
+          {
+            "line": "call1-L62",
+            "quote": "Ongoing I'd have to put in the FY28 operating request, which, um, that's a conversation for spring.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      {
+        "text": "Atrium's roadmap patron engagement module gives the buyer a wait-for-incumbent option. CRM lists no competitors.",
+        "severity": "high",
+        "citations": [
+          {
+            "line": "call1-L48",
+            "quote": "Atrium's been telling us they've got a patron engagement module on the roadmap",
+            "status": "verified"
+          },
+          {
+            "line": "crm-L34",
+            "quote": "\"competitors\": [],",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "$52,400 Year 1 triggers Board of Supervisors approval (~1 month), squeezing the Feb paperwork / early March kickoff needed for June 1.",
+        "severity": "high",
+        "citations": [
+          {
+            "line": "email2-L26",
+            "quote": "the year-one number lands just above the $50K Board threshold",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L64",
+            "quote": "that adds, like, a month, depending on their agenda.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L53",
+            "quote": "we'd want to kick off by, call it, early March. Which means paperwork done in February-ish.",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Economic buyer Linda has never engaged; Maria deferred involving her and says she has a lot going on.",
+        "severity": "medium",
+        "citations": [
+          {
+            "line": "call1-L66",
+            "quote": "She knows I'm looking. She's, um... she's got a lot going on.",
+            "status": "verified"
+          },
+          {
+            "line": "crm-L32",
+            "quote": "\"last_activity\": null",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Technical buy-in is pending; Tom has no opinion until the deep-dive, which slipped to week of Nov 2 or later.",
+        "severity": "medium",
+        "citations": [
+          {
+            "line": "call1-L92",
+            "quote": "I need to see the integration side before I've got an opinion.",
+            "status": "verified"
+          },
+          {
+            "line": "email2-L28",
+            "quote": "Raj is at a conference next week",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Years 2–3 depend on an unsubmitted FY28 operating request.",
+        "severity": "medium",
+        "citations": [
+          {
+            "line": "call1-L62",
+            "quote": "Ongoing I'd have to put in the FY28 operating request",
+            "status": "verified"
+          }
+        ]
+      },
+      {
+        "text": "Quoted pricing expires Dec 31, 2026, before the February paperwork target.",
+        "severity": "low",
+        "citations": [
+          {
+            "line": "email2-L24",
+            "quote": "Pricing is valid through Dec 31, 2026.",
+            "status": "verified"
+          },
+          {
+            "line": "call1-L53",
+            "quote": "Which means paperwork done in February-ish.",
+            "status": "verified"
+          }
+        ]
+      }
+    ],
+    "crm_discrepancies": []
+  }
+}

@@ -1,0 +1,33 @@
+From: Dana Whitfield <dana.whitfield@bramblepatron.com>
+To: Maria Okafor <mokafor@marlowcountylibrary.org>
+Date: Fri, 23 Oct 2026 16:41:37 -0400
+Subject: Bramble pricing for Marlow County Library System
+Attachments: Bramble_Proposal_MarlowCountyLibrary_v1.pdf
+
+Hi Maria,
+
+As promised, here's pricing broken out by module and by year. Full proposal attached.
+
+Year 1 subscription:
+- Holds & Notifications (incl. SMS, up to 50,000 messages/yr): $14,200
+- Rooms & Spaces: $9,800
+- Events & Programs (incl. summer reading registration): $13,600
+- Online Card Signup: $5,800
+Subscription subtotal: $43,400/yr
+
+One-time implementation & Atrium integration: $9,000
+
+Year 1 total: $52,400
+Year 2: $44,700 (subscription only, 3% uplift)
+Year 3: $46,040
+
+Proposed term is 3 years. Pricing is valid through Dec 31, 2026.
+
+I know the year-one number lands just above the $50K Board threshold you mentioned — happy to talk through options there.
+
+One scheduling note: Raj is at a conference next week, so the Atrium deep-dive with Tom would be the week of Nov 2 at the earliest. I'll get something on the calendar.
+
+Best,
+Dana
+
+Dana Whitfield | Account Executive | Bramble Software
